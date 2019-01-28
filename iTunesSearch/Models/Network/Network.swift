@@ -33,14 +33,14 @@ class Network{
         }
     }
     
-    static func getMedia(term: String, media: String, offset: Int, limit: Int, success successCallback: @escaping (_ media: Array<Music>, _ total: Int) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (MoyaError) -> Void) {
+    static func getMedia(term: String, media: String, offset: Int, limit: Int, success successCallback: @escaping (_ media: Array<Media>, _ total: Int) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (MoyaError) -> Void) {
         
         self.request(target: .media(term: term, media: media, offset: offset, limit: limit), success: { (response) in
             do {
                 let responseJSON:AnyObject = try response.mapJSON() as AnyObject
                 let total = responseJSON["resultCount"] as? Int ?? 0
-                let restaurant = Mapper<Music>().mapArray(JSONObject: responseJSON["results"])
-                successCallback(restaurant!, total)
+                let media = Mapper<Media>().mapArray(JSONObject: responseJSON["results"])
+                successCallback(media!, total)
             } catch {
                 errorCallback(error)
             }
