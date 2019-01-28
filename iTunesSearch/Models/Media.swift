@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-enum MediaType{
-    case Music
-    case TVShow
-    case Movie
+enum MediaType: String{
+    case Music = "music"
+    case TVShow = "tvShow"
+    case Movie = "movie"
 }
 
 class Media: Mappable{
