@@ -20,6 +20,7 @@
 		2E4E8D4E21FEA5D70012B9B7 /* MainListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E8D4D21FEA5D70012B9B7 /* MainListVM.swift */; };
 		2E4E8D5121FEB4EA0012B9B7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E8D5021FEB4EA0012B9B7 /* Api.swift */; };
 		2E4E8D5321FEB6C40012B9B7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E8D5221FEB6C40012B9B7 /* Network.swift */; };
+		2E4E8D5621FEE9AF0012B9B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E8D5521FEE9AF0012B9B7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2E4E8D4D21FEA5D70012B9B7 /* MainListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListVM.swift; sourceTree = "<group>"; };
 		2E4E8D5021FEB4EA0012B9B7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		2E4E8D5221FEB6C40012B9B7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2E4E8D5521FEE9AF0012B9B7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55B1EF03749BDF432473589D /* Pods-iTunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		58F81E9FA947FE32F07B40EE /* Pods_iTunesSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8EFF7E48BCA962D46FA252 /* Pods-iTunesSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		2E4E8D1E21FE14DC0012B9B7 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				2E4E8D5421FEE9990012B9B7 /* Resources */,
 				2E4E8D3F21FE1D2A0012B9B7 /* Models */,
 				2E4E8D4021FE1D340012B9B7 /* Views */,
 				2E4E8D4121FE1D3E0012B9B7 /* ViewModels */,
@@ -164,6 +167,14 @@
 				2E4E8D5221FEB6C40012B9B7 /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		2E4E8D5421FEE9990012B9B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E4E8D5521FEE9AF0012B9B7 /* Extensions.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		32AC872BCADF14AEFD901EAF /* Frameworks */ = {
@@ -349,6 +360,7 @@
 				2E4E8D5321FEB6C40012B9B7 /* Network.swift in Sources */,
 				2E4E8D5121FEB4EA0012B9B7 /* Api.swift in Sources */,
 				2E4E8D2221FE14DC0012B9B7 /* ViewController.swift in Sources */,
+				2E4E8D5621FEE9AF0012B9B7 /* Extensions.swift in Sources */,
 				2E4E8D2021FE14DC0012B9B7 /* AppDelegate.swift in Sources */,
 				2E4E8D4421FE257B0012B9B7 /* Media.swift in Sources */,
 				2E4E8D4C21FEA5680012B9B7 /* MainListVC.swift in Sources */,
