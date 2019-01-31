@@ -52,7 +52,6 @@ class MainListVM: NSObject {
         
         let url = URL(string: media.artworkUrl100 ?? "")
         artWork.kf.setImage(with: url)
-        artWork.layer.cornerRadius = 16
         
         trackName.text = media.trackName ?? ""
        
@@ -69,9 +68,11 @@ class MainListVM: NSObject {
         
     }
     
-    func selectedMediaAtIndexPath(indexPath: IndexPath) -> Media{
+    func selectedPreviewAtIndexPath(indexPath: IndexPath) -> String{
         
-        return media[indexPath.row]
+        let previewUrl = media[indexPath.row].previewUrl ?? ""
+        return previewUrl
+        
     }
     
 }

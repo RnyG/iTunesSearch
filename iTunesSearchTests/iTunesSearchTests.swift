@@ -18,17 +18,26 @@ class iTunesSearchTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    let media = Media(JSON: ["trackId":1,"trackName":"Something","artworkUrl100":"","artistName":"Rhonny","longDescription":"This is a very good example","previewUrl":"","kind":"media"])
+    
+    func testMovieModel(){
+    
+        XCTAssertEqual("Something", media?.trackName)
+        XCTAssertEqual("This is a very good example", media?.longDescription)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testMusicModel(){
+        
+        XCTAssertEqual("Something", media?.trackName)
+        XCTAssertEqual("This is a very good example", media?.longDescription)
+    }
+    
+    func testTVShowModel(){
+        
+        XCTAssertEqual("Rhonny", media?.artistName)
+        XCTAssertEqual("Something", media?.trackName)
+        XCTAssertEqual("This is a very good example", media?.longDescription)
     }
 
 }

@@ -11,6 +11,7 @@ target 'iTunesSearch' do
   pod 'Kingfisher','4.8.1'
   pod 'ObjectMapper','3.3.0'
   pod 'NVActivityIndicatorView','4.4.0'
+  pod 'VersaPlayer','2.1.4'
 
   target 'iTunesSearchTests' do
     inherit! :search_paths

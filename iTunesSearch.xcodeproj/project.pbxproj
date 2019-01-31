@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0378896369F73D29973B0DAA /* Pods_iTunesSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E83B3A3722EC9276EF9191 /* Pods_iTunesSearch.framework */; };
 		132A1FE36691A7B42D5DC0BE /* Pods_iTunesSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F81E9FA947FE32F07B40EE /* Pods_iTunesSearchTests.framework */; };
+		2E0A23F12202D75A005D6962 /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A23F02202D75A005D6962 /* PreviewVC.swift */; };
 		2E4E8D2021FE14DC0012B9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E8D1F21FE14DC0012B9B7 /* AppDelegate.swift */; };
 		2E4E8D2221FE14DC0012B9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E8D2121FE14DC0012B9B7 /* ViewController.swift */; };
 		2E4E8D2521FE14DC0012B9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4E8D2321FE14DC0012B9B7 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		04E83B3A3722EC9276EF9191 /* Pods_iTunesSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0A23F02202D75A005D6962 /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
 		2E4E8D1C21FE14DC0012B9B7 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4E8D1F21FE14DC0012B9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4E8D2121FE14DC0012B9B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				2E4E8D4B21FEA5680012B9B7 /* MainListVC.swift */,
+				2E0A23F02202D75A005D6962 /* PreviewVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/VersaPlayer/VersaPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -308,6 +312,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VersaPlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0A23F12202D75A005D6962 /* PreviewVC.swift in Sources */,
 				2E4E8D5321FEB6C40012B9B7 /* Network.swift in Sources */,
 				2E4E8D5121FEB4EA0012B9B7 /* Api.swift in Sources */,
 				2E4E8D2221FE14DC0012B9B7 /* ViewController.swift in Sources */,
@@ -530,6 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XZ9Z7WDLZ9;
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XZ9Z7WDLZ9;
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
