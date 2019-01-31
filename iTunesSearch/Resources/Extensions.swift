@@ -23,7 +23,3 @@ extension UIViewController {
     
     
 }
-
-extension UIColor{
-    
-}
